@@ -3,6 +3,7 @@
  *
  * Duplicate values will be ignored.
  *
+ * @since 0.0.2
  * @param array
  * @param key
  */
