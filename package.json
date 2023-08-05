@@ -1,4 +1,21 @@
 {
   "name": "wumbo",
-  "packageManager": "yarn@3.6.0"
+  "author": {
+    "name": "Eduardo Bautista",
+    "email": "etchers_techie0m@icloud.com"
+  },
+  "scripts": {
+    "tsc:w": "tsc -w"
+  },
+  "description": "Utility functions using modern JS features.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "packageManager": "yarn@3.6.0",
+  "version": "0.0.2",
+  "sideEffects": false,
+  "license": "(MIT OR Apache-2.0)",
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6"
+  }
 }
