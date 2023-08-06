@@ -1,7 +1,7 @@
 /**
  * Creates an object mapping an array of objects by a key.
  *
- * Duplicate values will be ignored.
+ * Duplicate values later in the array will be ignored.
  *
  * @since 0.0.2
  * @param array
@@ -11,7 +11,7 @@ const keyBy = <T>(array: T[], key: keyof T): Map<string, T> => {
   const keyedCollection = new Map();
 
   array.forEach((item) => {
-    if (keyedCollection.get(item[key])) {
+    if (!keyedCollection.get(item[key])) {
       keyedCollection.set(item[key], item);
     }
   });
