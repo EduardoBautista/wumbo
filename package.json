@@ -1,21 +1,33 @@
 {
   "name": "wumbo",
   "author": {
-    "name": "Eduardo Bautista",
-    "email": "etchers_techie0m@icloud.com"
+    "email": "etchers_techie0m@icloud.com",
+    "name": "Eduardo Bautista"
+  },
+  "bugs": {
+    "url": "https://github.com/EduardoBautista/wumbo/issues"
+  },
+  "description": "Utility functions using modern JS features.",
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "typescript": "^5.1.6"
+  },
+  "keywords": [
+    "modules",
+    "stdlib",
+    "util"
+  ],
+  "license": "(MIT OR Apache-2.0)",
+  "main": "dist/index.js",
+  "packageManager": "yarn@3.6.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EduardoBautista/wumbo"
   },
   "scripts": {
     "tsc:w": "tsc -w"
   },
-  "description": "Utility functions using modern JS features.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "packageManager": "yarn@3.6.0",
-  "version": "0.0.3",
   "sideEffects": false,
-  "license": "(MIT OR Apache-2.0)",
-  "devDependencies": {
-    "prettier": "^3.0.1",
-    "typescript": "^5.1.6"
-  }
+  "types": "dist/index.d.ts",
+  "version": "0.0.3"
 }
