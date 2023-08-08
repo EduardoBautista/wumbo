@@ -1,5 +1,7 @@
 # "W" for Wumbo
 
+[![npm version](https://badge.fury.io/js/wumbo.svg)](https://badge.fury.io/js/wumbo)
+
 Wumbo features, mini size.
 
 ## Goals
