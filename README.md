@@ -6,6 +6,7 @@ Wumbo features, mini size.
 
 ## Goals
 
+* Functions accept iterable objects instead of arrays
 * Zero side-effects
 * Use of modern JS features such as `Set` and `Map`
 * Avoid reinventing existing JS functionality 
