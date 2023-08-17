@@ -1,7 +1,7 @@
 import { compact } from "./";
 
 test("removes null and undefined values", () => {
-  expect(compact([0, 1, 2, "", [], {}, false, null, undefined])).toEqual([
+  const iterable: (0 | 1 | "" | [] | {} | false | null | undefined)[] = [
     0,
     1,
     2,
@@ -9,5 +9,10 @@ test("removes null and undefined values", () => {
     [],
     {},
     false,
-  ]);
+    null,
+    undefined,
+  ];
+  const result: NonNullable<(typeof iterable)[number]>[] = compact(iterable);
+
+  expect(result).toEqual([0, 1, 2, "", [], {}, false]);
 });
