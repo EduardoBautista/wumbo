@@ -1,5 +1,4 @@
-import filter from "./filter";
-import isCompacted from "../lib/isCompacted";
+import forEach from "./forEach";
 
 /**
  * Removes all null and undefined values from an iterable.
@@ -8,16 +7,15 @@ import isCompacted from "../lib/isCompacted";
  * @param iterable - The iterable to remove null and undefined values from
  */
 const compact = <T>(iterable: Iterable<T>): NonNullable<T>[] => {
-  const filteredIterable = filter(
-    iterable,
-    (item) => item !== null && item !== undefined,
-  );
+  const filteredIterable = new Array<NonNullable<T>>();
 
-  if (isCompacted(filteredIterable)) {
-    return filteredIterable;
-  } else {
-    return [];
-  }
+  forEach(iterable, (item) => {
+    if (item !== null && item !== undefined) {
+      filteredIterable.push(item);
+    }
+  });
+
+  return filteredIterable;
 };
 
 export default compact;
